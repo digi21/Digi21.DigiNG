@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01E76C8F-987C-4631-9E32-29C1D5C9E72F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Digi21</RootNamespace>
+    <AssemblyName>Digi21.DigiNG</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>certificadoSxsDigi21.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cameras\Camera.cs" />
+    <Compile Include="Cameras\ConicCamera.cs" />
+    <Compile Include="Cameras\OrtographicCamera.cs" />
+    <Compile Include="Cameras\StandarPointOfView.cs" />
+    <Compile Include="Databases\DynamicPropertyAttribute.cs" />
+    <Compile Include="Databases\IDynamicProperty.cs" />
+    <Compile Include="Digi3D\ITask.cs" />
+    <Compile Include="Digi3D\ProgressEventArgs.cs" />
+    <Compile Include="Digi3D\ProgressEventHandler.cs" />
+    <Compile Include="Digi3D\ResultsAddedEventArgs.cs" />
+    <Compile Include="Digi3D\ResultsAddedEventHandler.cs" />
+    <Compile Include="Digi3D\TaskAddedEventArgs.cs" />
+    <Compile Include="Digi3D\TaskAddedEventHandler.cs" />
+    <Compile Include="Digi3D\TaskBase.cs" />
+    <Compile Include="Digi3D\TaskMessageBox.cs" />
+    <Compile Include="Digi3D\TaskSeverity.cs" />
+    <Compile Include="DigiNG\DigiTab\DatabaseAttributeException.cs" />
+    <Compile Include="DigiNG\DigiTab\DigiTab.cs" />
+    <Compile Include="DigiNG\DigiTab\DigitizeAsPointException.cs" />
+    <Compile Include="DigiNG\DigiTab\GeometricRelationException.cs" />
+    <Compile Include="DigiNG\DigiTab\GeometryException.cs" />
+    <Compile Include="DigiNG\DigiTab\ITrigger.cs" />
+    <Compile Include="DigiNG\DigiTab\NodeDigiTab.cs" />
+    <Compile Include="DigiNG\Entities\Code.cs" />
+    <Compile Include="DigiNG\Entities\CodeCollection.cs" />
+    <Compile Include="DigiNG\Entities\Complex.cs" />
+    <Compile Include="DigiNG\Entities\Entity.cs" />
+    <Compile Include="DigiNG\Entities\IClippable.cs" />
+    <Compile Include="DigiNG\Entities\ICloseable.cs" />
+    <Compile Include="DigiNG\Entities\IDirectionable.cs" />
+    <Compile Include="DigiNG\Entities\IJoinable.cs" />
+    <Compile Include="DigiNG\Entities\ISnappable.cs" />
+    <Compile Include="DigiNG\Entities\ITrimmable.cs" />
+    <Compile Include="DigiNG\Entities\Line.cs" />
+    <Compile Include="DigiNG\Entities\Point.cs" />
+    <Compile Include="DigiNG\Entities\PointPosition.cs" />
+    <Compile Include="DigiNG\Entities\Polygon.cs" />
+    <Compile Include="DigiNG\Entities\ReadOnlyComplex.cs" />
+    <Compile Include="DigiNG\Entities\ReadOnlyLine.cs" />
+    <Compile Include="DigiNG\Entities\ReadOnlyPoint.cs" />
+    <Compile Include="DigiNG\Entities\ReadOnlyPolygon.cs" />
+    <Compile Include="DigiNG\Entities\ReadOnlyText.cs" />
+    <Compile Include="DigiNG\Entities\Relations\AreaArea.cs" />
+    <Compile Include="DigiNG\Entities\Relations\LineArea.cs" />
+    <Compile Include="DigiNG\Entities\Relations\LineLine.cs" />
+    <Compile Include="DigiNG\Entities\Relations\PointArea.cs" />
+    <Compile Include="DigiNG\Entities\Relations\PointLine.cs" />
+    <Compile Include="DigiNG\Entities\Relations\PointPoint.cs" />
+    <Compile Include="DigiNG\Entities\SegmentPointer.cs" />
+    <Compile Include="DigiNG\Entities\Text.cs" />
+    <Compile Include="DigiNG\Entities\TextJustification.cs" />
+    <Compile Include="DigiNG\Entities\VertexPointer.cs" />
+    <Compile Include="DigiNG\IO\IDrawingFile.cs" />
+    <Compile Include="Math\Angles.cs" />
+    <Compile Include="Math\IDesplazable.cs" />
+    <Compile Include="Math\IWindow3D.cs" />
+    <Compile Include="Math\IWindows2D.cs" />
+    <Compile Include="Math\Point2D.cs" />
+    <Compile Include="Math\Point3D.cs" />
+    <Compile Include="Math\Point3DCollection.cs" />
+    <Compile Include="Math\Point3DEventArgs.cs" />
+    <Compile Include="Math\Point3DReadOnlyCollection.cs" />
+    <Compile Include="Math\Precision.cs" />
+    <Compile Include="Math\Segment.cs" />
+    <Compile Include="Math\SegmentRelation.cs" />
+    <Compile Include="Math\Window2D.cs" />
+    <Compile Include="Math\Window3D.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="certificadoSxsDigi21.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
