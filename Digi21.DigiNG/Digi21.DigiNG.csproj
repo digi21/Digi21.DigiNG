@@ -101,7 +101,9 @@
     <Compile Include="DigiNG\Entities\Text.cs" />
     <Compile Include="DigiNG\Entities\TextJustification.cs" />
     <Compile Include="DigiNG\Entities\VertexPointer.cs" />
+    <Compile Include="DigiNG\IO\DelegateGetWkt.cs" />
     <Compile Include="DigiNG\IO\IDrawingFile.cs" />
+    <Compile Include="DigiNG\IO\IReadOnlyDrawingFile.cs" />
     <Compile Include="Math\Angles.cs" />
     <Compile Include="Math\IDesplazable.cs" />
     <Compile Include="Math\IWindow3D.cs" />
