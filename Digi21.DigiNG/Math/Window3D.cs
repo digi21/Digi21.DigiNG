@@ -1,5 +1,4 @@
 ﻿using System.Drawing;
-using System.Runtime.InteropServices;
 
 namespace Digi21.Math
 {
@@ -11,7 +10,7 @@ namespace Digi21.Math
         public double Xmax { get; set; }
         public double Ymax { get; set; }
         public double Zmax { get; set; }
-        public bool Valid { [return: MarshalAs(UnmanagedType.U1)] get; }
+        public bool Valid { get; }
         public double Width { get; }
         public double Height { get; }
         public double Depth { get; }
@@ -52,30 +51,18 @@ namespace Digi21.Math
         public void Union(PointF point) { throw null; }
         public void Union(Point point) { throw null; }
         public void Union(double xMin, double xMax, double yMin, double yMax, double zMin, double zMax) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(IWindow3D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(Window3D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(Point3D point) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(PointF point) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(Point point) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Intersect(Window3D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         private bool Intersect2D(double xMin, double xMax, double yMin, double yMax) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Intersect2D(Point3D point) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Intersect2D(Window3D window) { throw null; }
         public override string ToString() { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         private bool Contains3D(double xMin, double xMax, double yMin, double yMax, double zMin, double zMax) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         private bool Contains2D(double xMin, double xMax, double yMin, double yMax) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         private bool Intersect3D(double xMin, double xMax, double yMin, double yMax, double zMin, double zMax) { throw null; }
         static Window3D() { throw null; }
     }

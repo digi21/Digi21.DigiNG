@@ -1,7 +1,6 @@
 ﻿using Digi21.DigiNG.IO;
 using Digi21.Math;
 using System;
-using System.Runtime.InteropServices;
 
 namespace Digi21.DigiNG.Entities
 {
@@ -23,7 +22,7 @@ namespace Digi21.DigiNG.Entities
         public double Depth { get; }
         public double Height { get; }
         public double Width { get; }
-        public bool Valid { [return: MarshalAs(UnmanagedType.U1)] get; }
+        public bool Valid { get; }
         public double Zmax { get; set; }
         public double Ymax { get; set; }
         public double Xmax { get; set; }
@@ -31,13 +30,13 @@ namespace Digi21.DigiNG.Entities
         public double Ymin { get; set; }
         public double? Xmin { get; set; }
         public IDrawingFile Owner { get; }
-        public bool Deleted { [return: MarshalAs(UnmanagedType.U1)] get; }
-        public bool ReadOnly { [return: MarshalAs(UnmanagedType.U1)] get; }
+        public bool Deleted { get; }
+        public bool ReadOnly { get; }
         public int? FillColor { get; set; }
         public int? Weight { get; set; }
         public int? Color { get; set; }
         public CodeCollection Codes { get; }
-        public bool Visible { [return: MarshalAs(UnmanagedType.U1)] get; }
+        public bool Visible { get; }
         public DateTime CreationTime { get; }
         public int Offset { get; }
     }

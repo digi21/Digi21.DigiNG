@@ -1,6 +1,5 @@
 ﻿using Digi21.Math;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 
 namespace Digi21.DigiNG.Entities
 {
@@ -15,6 +14,6 @@ namespace Digi21.DigiNG.Entities
         public new void Offset(double x, double y) { throw null; }
         public new void Offset(double x, double y, double z) { throw null; }
         public new Point3DCollection Points { get; }
-        public new bool Deleted { [param: MarshalAs(UnmanagedType.U1)] set { throw null; } }
+        public new bool Deleted { set { throw null; } }
     }
 }

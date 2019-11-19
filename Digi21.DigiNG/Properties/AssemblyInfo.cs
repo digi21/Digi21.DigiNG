@@ -7,10 +7,10 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: ReferenceAssembly]
 [assembly: AssemblyTitle("Digi21.DigiNG")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Implements DigiNG types of Digi3D.NET")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Digi21.DigiNG")]
+[assembly: AssemblyCompany("Dreaming With Objects S.L.")]
+[assembly: AssemblyProduct("Digi3D.NET")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

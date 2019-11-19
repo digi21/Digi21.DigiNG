@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
+﻿
 namespace Digi21.Math
 {
     public interface IWindow2D
@@ -15,7 +14,7 @@ namespace Digi21.Math
         Point2D Center { get; }
         double Height { get; }
         double Width { get; }
-        bool Valid { [return: MarshalAs(UnmanagedType.U1)] get; }
+        bool Valid { get; }
         double Ymax { get; set; }
         double Xmax { get; set; }
         double Ymin { get; set; }

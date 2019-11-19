@@ -1,11 +1,10 @@
-﻿using System.Runtime.InteropServices;
-
+﻿
 namespace Digi21.Math
 {
     public static class Angles
     {
         public static double AzimuthToTrigonometric(double radians) { throw null; }
-        public static void DMSToSexagesimal(int degrees, int minutes, double seconds, [MarshalAs(UnmanagedType.U1)] bool east, out double sexagesimal) { throw null; }
+        public static void DMSToSexagesimal(int degrees, int minutes, double seconds, bool east, out double sexagesimal) { throw null; }
         public static double GradianToRadian(double gradian) { throw null; }
         public static double GradianToSexagesimal(double radian) { throw null; }
         public static void MatrixToRotations(double[,] eulerMatrix, out double omega, out double phi, out double kappa) { throw null; }

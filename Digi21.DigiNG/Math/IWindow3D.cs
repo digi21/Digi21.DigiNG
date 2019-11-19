@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
+﻿
 namespace Digi21.Math
 {
     public interface IWindow3D
@@ -16,7 +15,7 @@ namespace Digi21.Math
         double Depth { get; }
         double Height { get; }
         double Width { get; }
-        bool Valid { [return: MarshalAs(UnmanagedType.U1)] get; }
+        bool Valid { get; }
         double Zmax { get; set; }
         double Ymax { get; set; }
         double Xmax { get; set; }

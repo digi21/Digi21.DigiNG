@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
+﻿
 namespace Digi21.DigiNG.Entities
 {
     public struct Code
@@ -11,12 +10,9 @@ namespace Digi21.DigiNG.Entities
         public int? Table { get; }
         public int? Id { get; }
 
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool operator ==(Code a, Code b) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool operator !=(Code a, Code b) { throw null; }
         public static string Compose(string stringToCompose, string wildCard) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Compare(string codeNameA, string codeNameB) { throw null; }
         public override string ToString() { throw null; }
     }

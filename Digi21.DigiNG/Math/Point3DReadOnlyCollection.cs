@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 
 namespace Digi21.Math
 {
     public class Point3DReadOnlyCollection : IReadOnlyList<Point3D>
     {
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(Point3D vertice) { throw null; }
         public void CopyTo(Point3D[] array, int arrayIndex) { throw null; }
         public IEnumerator<Point3D> GetEnumerator() { throw null; }

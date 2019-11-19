@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 
 namespace Digi21.DigiNG.DigiTab
 {
@@ -8,10 +7,8 @@ namespace Digi21.DigiNG.DigiTab
     {
         public void AddCode(NodeDigiTab code) { throw null; }
         public void Dispose() { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool HasCode(string name) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
-        public bool HasCode(string name, [MarshalAs(UnmanagedType.U1)] bool allowWilcards) { throw null; }
+        public bool HasCode(string name, bool allowWilcards) { throw null; }
         public static Digi21.DigiNG.DigiTab.DigiTab Load(string path) { throw null; }
         public void Write(string path) { throw null; }
         public IDictionary<string, IList<Tuple<string, Type>>> Tables { get; }

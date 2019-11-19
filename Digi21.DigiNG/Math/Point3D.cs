@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
+﻿
 namespace Digi21.Math
 {
     public struct Point3D : IDesplazable
@@ -13,9 +12,7 @@ namespace Digi21.Math
         public Point3D(double value) { throw null; }
         public Point3D(double x, double y, double z) { throw null; }
 
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool operator ==(Point3D a, Point3D b) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool operator !=(Point3D a, Point3D b) { throw null; }
         public static Point3D operator +(Point3D a, Point3D b) { throw null; }
         public static Point3D operator -(Point3D a, Point3D b) { throw null; }
@@ -30,7 +27,7 @@ namespace Digi21.Math
         public double SquaredModule { get; }
         public static double CalculateSquaredModule(Point3D a, Point3D b) { throw null; }
         public Point3D Normalized { get { throw null; } }
-        public bool IsEmpty { [return: MarshalAs(UnmanagedType.U1)] get; }
+        public bool IsEmpty { get; }
         public void Offset(double x, double y, double z) { throw null; }
         public void Offset(double x, double y) { throw null; }
         public void Offset(Point3D offset) { throw null; }

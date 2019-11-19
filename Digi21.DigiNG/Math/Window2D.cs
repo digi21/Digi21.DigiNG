@@ -1,5 +1,4 @@
 ﻿using System.Drawing;
-using System.Runtime.InteropServices;
 
 namespace Digi21.Math
 {
@@ -10,7 +9,7 @@ namespace Digi21.Math
         public double Ymin { get; set; }
         public double Xmax { get; set; }
         public double Ymax { get; set; }
-        public bool Valid { [return: MarshalAs(UnmanagedType.U1)] get; }
+        public bool Valid { get; }
         public double Width { get; }
         public double Height { get; }
         public Point2D Center { get; }
@@ -102,81 +101,43 @@ namespace Digi21.Math
         public Window2D Intersection(IWindow2D window) { throw null; }
         public Window2D Intersection(Window3D window) { throw null; }
         public Window2D Intersection(Window2D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(double? xMinA, double xMaxA, double yMinA, double yMaxA, double? xMinB, double xMaxB, double yMinB, double yMaxB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(IWindow3D wndA, Window3D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(IWindow3D wndA, Window2D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(IWindow2D wndA, Window3D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(IWindow2D wndA, Window2D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(Window3D wndA, IWindow3D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(Window3D wndA, IWindow2D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(Window2D wndA, IWindow3D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(Window2D wndA, IWindow2D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(Window3D wndA, Window3D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(Window3D wndA, Window2D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(Window2D wndA, Window3D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Contains(Window2D wndA, Window2D wndB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(double xMin, double xMax, double yMin, double yMax) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(IWindow3D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(IWindow2D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(Window3D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(Window2D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(Point3D point) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(Point2D point) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(PointF point) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Contains(Point point) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Intersects(double xMinA, double xMaxA, double yMinA, double yMaxA, double xMinB, double xMaxB, double yMinB, double yMaxB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Intersects(double? xMinA, double xMaxA, double yMinA, double yMaxA, double? xMinB, double xMaxB, double yMinB, double yMaxB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Intersects(IWindow3D windowA, IWindow3D windowB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Intersects(IWindow3D windowA, IWindow2D windowB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Intersects(IWindow2D windowA, IWindow3D windowB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Intersects(IWindow2D windowA, IWindow2D windowB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Intersects(Window3D windowA, Window3D windowB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Intersects(Window3D windowA, Window2D windowB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Intersects(Window2D windowA, Window3D windowB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public static bool Intersects(Window2D windowA, Window2D windowB) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Intersects(double xMin, double xMax, double yMin, double yMax) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Intersects(double? xMin, double xMax, double yMin, double yMax) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Intersects(IWindow3D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Intersects(IWindow2D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Intersects(Window3D window) { throw null; }
-        [return: MarshalAs(UnmanagedType.U1)]
         public bool Intersects(Window2D window) { throw null; }
         public override string ToString() { throw null; }
         static Window2D() { throw null; }

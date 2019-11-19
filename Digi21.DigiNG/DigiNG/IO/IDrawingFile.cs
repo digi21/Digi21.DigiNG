@@ -1,6 +1,5 @@
 ﻿using Digi21.DigiNG.Entities;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 
 namespace Digi21.DigiNG.IO
 {
@@ -19,8 +18,8 @@ namespace Digi21.DigiNG.IO
         string Wkt { get; }
         IDictionary<string, IDictionary<string, object>> GetDatabaseAttributes(Entity entity);
         IDictionary<string, int> DatabaseTables { get; }
-        bool CanWrite { [return: MarshalAs(UnmanagedType.U1)] get; }
-        bool CanRead { [return: MarshalAs(UnmanagedType.U1)] get; }
+        bool CanWrite { get; }
+        bool CanRead { get; }
         string Path { get; }
     }
 }

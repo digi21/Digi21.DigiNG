@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Runtime.InteropServices;
 
 namespace Digi21.DigiNG.Entities
 {
@@ -15,7 +14,6 @@ namespace Digi21.DigiNG.Entities
         [Browsable(false)]
         public class EntityReadOnlyCollection : IReadOnlyList<Entity>
         {
-            [return: MarshalAs(UnmanagedType.U1)]
             public bool Contains(Entity entity) { throw null; }
             public void CopyTo(Entity[] array, int arrayIndex) { throw null; }
             public IEnumerator<Entity> GetEnumerator() { throw null; }
