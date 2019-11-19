@@ -8,6 +8,7 @@
     <owners>Dreaming With Objects S.L.</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://www.digi21.net/digi3d</projectUrl>
+    <repository type="git" url="https://github.com/digi21/Digi21.DigiNG.git" branch="master" commit="cbefa05335ca4d76c284e84cc50e467b72ca94e0"/>
     <license type="expression">MIT</license>
     <icon>IconoDigi21.png</icon>
     <description>This package contains runtime assemblies with types for developing applications with the Digi3D.NET engine.
