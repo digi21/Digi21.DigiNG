@@ -9,7 +9,8 @@ namespace Digi21.DigiNG.Entities
         public string Name { get; }
         public int? Table { get; }
         public int? Id { get; }
-
+        public bool Visible { get; set; }
+        public bool VisiblePhotogrammetricWindow { get; set; }
         public static bool operator ==(Code a, Code b) { throw null; }
         public static bool operator !=(Code a, Code b) { throw null; }
         public static string Compose(string stringToCompose, string wildCard) { throw null; }
