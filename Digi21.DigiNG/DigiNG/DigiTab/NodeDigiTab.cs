@@ -14,7 +14,6 @@ namespace Digi21.DigiNG.DigiTab
         public IEnumerable<string> Alias { get; set; }
         public IEnumerable<string> Tags { get; set; }
         public string Table { get; set; }
-        public bool Visibility { get; }
         public string Description { get; set; }
         public string Name { get; }
     }
