@@ -1,6 +1,7 @@
 ﻿using Digi21.DigiNG.IO;
 using Digi21.Math;
 using System;
+using System.Collections.Generic;
 
 namespace Digi21.DigiNG.Entities
 {
@@ -39,5 +40,6 @@ namespace Digi21.DigiNG.Entities
         public bool Visible { get; }
         public DateTime CreationTime { get; }
         public int Offset { get; }
+        public IDictionary<string, IDictionary<string, object>> Database { get; }
     }
 }
