@@ -7,7 +7,7 @@ namespace Digi21.DigiNG.Entities
 {
     public abstract class Entity : IWindow3D, ICloneable, IDisposable
     {
-        public virtual Entity Clone() => throw null;
+        public Entity Clone() => throw null;
         object ICloneable.Clone() => throw null;
         public virtual void Dispose() => throw null;
         public override string ToString() => throw null;
