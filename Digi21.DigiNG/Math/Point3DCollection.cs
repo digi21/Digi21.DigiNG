@@ -18,7 +18,7 @@ namespace Digi21.Math
         public void RemoveAt(int index) { throw null; }
 
         public Point3D this[int index] { get { throw null; } set { throw null; } }
-        public int Count { get; }
-        public bool IsReadOnly { get; }
+        public int Count => throw null;
+        public bool IsReadOnly => throw null;
     }
 }

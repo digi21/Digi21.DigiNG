@@ -9,7 +9,7 @@ namespace Digi21.DigiNG.Entities
         public new Complex Clone() { throw null; }
         public override string ToString() { throw null; }
 
-        public EntityReadOnlyCollection Entities { get; }
+        public EntityReadOnlyCollection Entities => throw null;
 
         [Browsable(false)]
         public class EntityReadOnlyCollection : IReadOnlyList<Entity>
@@ -21,7 +21,7 @@ namespace Digi21.DigiNG.Entities
             public int IndexOf(Entity item) { throw null; }
 
             public Entity this[int index] { get { throw null; } }
-            public int Count { get; }
+            public int Count => throw null;
         }
     }
 }

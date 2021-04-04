@@ -13,16 +13,16 @@ namespace Digi21.DigiNG.Entities
         public double NearestVertex(Point3D coordinate, out Point3D nearestVertex, out int vertex) { throw null; } 
         public sealed override string ToString() { throw null; }
         public IEnumerable<Polygon> Trim(ReadOnlyLine limit, bool coordinateZFromThisEntity) { throw null; }
-        public double Area { get; }
-        public double Perimeter3D { get; }
-        public double Perimeter { get; }
-        public Point3D InteriorPoint { get; }
-        public bool ClosedXYZ { get; }
-        public bool Closed { get; }
-        public Segment LastSegment { get; }
-        public Segment FirstSegment { get; }
-        public Point3D LastVertex { get; }
-        public Point3D FirstVertex { get; }
-        public Point3DReadOnlyCollection Points { get; }
+        public double Area => throw null;
+        public double Perimeter3D => throw null;
+        public double Perimeter => throw null;
+        public Point3D InteriorPoint => throw null;
+        public bool ClosedXYZ => throw null;
+        public bool Closed => throw null;
+        public Segment LastSegment => throw null;
+        public Segment FirstSegment => throw null;
+        public Point3D LastVertex => throw null;
+        public Point3D FirstVertex => throw null;
+        public Point3DReadOnlyCollection Points => throw null;
     }
 }

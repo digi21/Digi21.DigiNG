@@ -3,7 +3,7 @@
     public struct VertexPointer
     {
         public VertexPointer(ReadOnlyLine line, int vertex) { throw null; }
-        public ReadOnlyLine Line { get; }
-        public int Vertex { get; }
+        public ReadOnlyLine Line => throw null;
+        public int Vertex => throw null;
     }
 }

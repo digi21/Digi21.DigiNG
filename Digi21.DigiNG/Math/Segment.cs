@@ -3,10 +3,10 @@
     public struct Segment
     {
         public Segment(Point3D origin, Point3D destination) { throw null; }
-        public Point3D Origin { get; set; }
-        public Point3D Destination { get; set; }
-        public Point3D DirectionVector { get; }
-        public Window3D Window { get; }
+        public Point3D Origin { get => throw null; set => throw null; }
+        public Point3D Destination { get => throw null; set => throw null; }
+        public Point3D DirectionVector => throw null;
+        public Window3D Window => throw null;
         public static SegmentRelation AnalyzeRelation(Segment a, Segment b) { throw null; }
         public static SegmentRelation AnalyzeRelationPlaneXY(Segment a, Segment b) { throw null; }
         public static double CalculateAngle(Segment a, Segment b) { throw null; }

@@ -5,22 +5,22 @@ namespace Digi21.Math
     public struct Window2D : IWindow2D, IDesplazable
     {
         public static readonly Window2D WholeWorld;
-        public double? Xmin { get; set; }
-        public double Ymin { get; set; }
-        public double Xmax { get; set; }
-        public double Ymax { get; set; }
-        public bool Valid { get; }
-        public double Width { get; }
-        public double Height { get; }
-        public Point2D Center { get; }
-        public Point2D NW { get; }
-        public Point2D N { get; }
-        public Point2D NE { get; }
-        public Point2D E { get; }
-        public Point2D SE { get; }
-        public Point2D S { get; }
-        public Point2D SW { get; }
-        public Point2D W { get; }
+        public double? Xmin { get => throw null; set => throw null; }
+        public double Ymin { get => throw null; set => throw null; }
+        public double Xmax { get => throw null; set => throw null; }
+        public double Ymax { get => throw null; set => throw null; }
+        public bool Valid => throw null;
+        public double Width => throw null;
+        public double Height => throw null;
+        public Point2D Center => throw null;
+        public Point2D NW => throw null;
+        public Point2D N => throw null;
+        public Point2D NE => throw null;
+        public Point2D E => throw null;
+        public Point2D SE => throw null;
+        public Point2D S => throw null;
+        public Point2D SW => throw null;
+        public Point2D W => throw null;
         public Window2D(Point3D point) { throw null; }
         public Window2D(Point2D point) { throw null; }
         public Window2D(double xMin, double yMin, double xMax, double yMax) { throw null; }

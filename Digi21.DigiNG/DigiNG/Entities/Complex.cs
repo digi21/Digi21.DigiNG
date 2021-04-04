@@ -8,7 +8,7 @@ namespace Digi21.DigiNG.Entities
         public Complex(Code code) { throw null; }
         public Complex(IEnumerable<Code> codigos) { throw null; }
 
-        public new EntityCollection Entities { get; }
+        public new EntityCollection Entities => throw null;
 
         public class EntityCollection : IList<Entity>
         {
@@ -27,8 +27,8 @@ namespace Digi21.DigiNG.Entities
 
             public Entity this[int index] { get { throw null; } set { throw null; } }
 
-            public bool IsReadOnly { get; }
-            public int Count { get; }
+            public bool IsReadOnly => throw null;
+            public int Count => throw null;
         }
     }
 }

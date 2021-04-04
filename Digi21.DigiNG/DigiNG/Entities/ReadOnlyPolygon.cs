@@ -14,10 +14,10 @@ namespace Digi21.DigiNG.Entities
         public double NearestVertex(Point3D coordinate, out Point3D nearestVertex, out int vertex) { throw null; }
         public override string ToString() { throw null; }
         public IEnumerable<Polygon> Trim(ReadOnlyLine limit, bool coordinateZFromThisEntity) { throw null; }
-        public double Area { get; }
-        public ReadOnlyLineReadOnlyCollection Holes { get; }
-        public Point3DReadOnlyCollection Points { get; }
-        public Point3D InteriorPoint { get; }
+        public double Area => throw null;
+        public ReadOnlyLineReadOnlyCollection Holes => throw null;
+        public Point3DReadOnlyCollection Points => throw null;
+        public Point3D InteriorPoint => throw null;
 
         public class ReadOnlyLineReadOnlyCollection : IReadOnlyList<ReadOnlyLine>
         {
@@ -27,7 +27,7 @@ namespace Digi21.DigiNG.Entities
             IEnumerator IEnumerable.GetEnumerator() { throw null; }
             public int IndexOf(ReadOnlyLine item) { throw null; }
             public ReadOnlyLine this[int index] { get { throw null; } }
-            public int Count { get; }
+            public int Count => throw null;
         }
     }
 }

@@ -10,6 +10,6 @@ namespace Digi21.Math
         public static bool IsLower(this double valueA, double valueB) { throw null; }
         public static bool IsLowerOrEqual(this double valueA, double valueB) { throw null; }
 
-        public static double Epsilon { get; set; }
+        public static double Epsilon { get => throw null; set => throw null; }
     }
 }

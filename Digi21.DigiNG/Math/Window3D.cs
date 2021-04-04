@@ -4,25 +4,25 @@ namespace Digi21.Math
 {
     public struct Window3D : IWindow3D, IDesplazable
     {
-        public double? Xmin { get; set; }
-        public double Ymin { get; set; }
-        public double Zmin { get; set; }
-        public double Xmax { get; set; }
-        public double Ymax { get; set; }
-        public double Zmax { get; set; }
-        public bool Valid { get; }
-        public double Width { get; }
-        public double Height { get; }
-        public double Depth { get; }
-        public Point3D Center { get; }
-        public Point3D NW { get; }
-        public Point3D N { get; }
-        public Point3D NE { get; }
-        public Point3D E { get; }
-        public Point3D SE { get; }
-        public Point3D S { get; }
-        public Point3D SW { get; }
-        public Point3D W { get; }
+        public double? Xmin { get => throw null; set => throw null; }
+        public double Ymin { get => throw null; set => throw null; }
+        public double Zmin { get => throw null; set => throw null; }
+        public double Xmax { get => throw null; set => throw null; }
+        public double Ymax { get => throw null; set => throw null; }
+        public double Zmax { get => throw null; set => throw null; }
+        public bool Valid => throw null;
+        public double Width => throw null;
+        public double Height => throw null;
+        public double Depth => throw null;
+        public Point3D Center => throw null;
+        public Point3D NW => throw null;
+        public Point3D N => throw null;
+        public Point3D NE => throw null;
+        public Point3D E => throw null;
+        public Point3D SE => throw null;
+        public Point3D S => throw null;
+        public Point3D SW => throw null;
+        public Point3D W => throw null;
         public Window3D(Point3D point) { throw null; }
         public Window3D(double xMin, double yMin, double zMin, double xMax, double yMax, double zMax) { throw null; }
         public Window3D(IWindow3D window) { throw null; }

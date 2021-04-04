@@ -9,7 +9,7 @@ namespace Digi21.DigiNG.Entities
         public Polygon(Code codigo) { throw null; }
         public Polygon(IEnumerable<Code> codigos) { throw null; }
         public static Polygon JoinPolygons(Entity a, Entity b) { throw null; }
-        public new LineCollection Holes { get; }
+        public new LineCollection Holes => throw null;
         public new Point3DCollection Points { get { throw null; } }
 
         public class LineCollection : IList<Line>
@@ -28,8 +28,8 @@ namespace Digi21.DigiNG.Entities
             public void RemoveAt(int index) { throw null; }
 
             public Line this[int index] { get { throw null; } set { throw null; } }
-            public bool IsReadOnly { get; }
-            public int Count { get; }
+            public bool IsReadOnly => throw null;
+            public int Count => throw null;
         }
     }
 }

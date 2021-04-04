@@ -9,10 +9,10 @@ namespace Digi21.DigiNG.Entities
         public double NearestSegment(Point3D coordinate, out Point3D calculatedCoordinate, out int segment) { throw null; }
         public double NearestVertex(Point3D coordinate, out Point3D nearestVertex, out int vertex) { throw null; }
         public override string ToString() { throw null; }
-        public TextJustification Justification { get; }
-        public double TextHeight { get; }
-        public double Rotation { get; }
-        public string Txt { get; }
-        public Point3D Coordinate { get; }
+        public TextJustification Justification => throw null;
+        public double TextHeight => throw null;
+        public double Rotation => throw null;
+        public string Txt => throw null;
+        public Point3D Coordinate => throw null;
     }
 }

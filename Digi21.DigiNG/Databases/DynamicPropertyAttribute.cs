@@ -7,7 +7,7 @@ namespace Digi21.Databases
         public DynamicPropertyAttribute() { throw null; }
         public DynamicPropertyAttribute(string dynamicProperty) { throw null; }
 
-        public string DynamicProperty { get; set; }
+        public string DynamicProperty { get => throw null; set => throw null; }
     }
 }
 
