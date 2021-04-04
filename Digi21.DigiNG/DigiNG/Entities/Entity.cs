@@ -36,7 +36,7 @@ namespace Digi21.DigiNG.Entities
         public int? FillColor { get => throw null; set => throw null; }
         public int? Weight { get => throw null; set => throw null; }
         public int? Color { get => throw null; set => throw null; }
-        public CodeCollection Codes => throw null;
+        public IList<Code> Codes => throw null;
         public bool Visible => throw null;
         public bool Hidden { get => throw null; set => throw null; }
         public DateTime CreationTime => throw null;
