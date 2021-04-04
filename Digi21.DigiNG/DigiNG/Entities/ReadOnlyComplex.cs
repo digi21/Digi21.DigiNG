@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.Collections.Generic;
 
 namespace Digi21.DigiNG.Entities
 {
@@ -9,19 +7,6 @@ namespace Digi21.DigiNG.Entities
         public new Complex Clone() => throw null;
         public override string ToString() => throw null;
 
-        public EntityReadOnlyCollection Entities => throw null;
-
-        [Browsable(false)]
-        public class EntityReadOnlyCollection : IReadOnlyList<Entity>
-        {
-            public bool Contains(Entity entity) => throw null;
-            public void CopyTo(Entity[] array, int arrayIndex) => throw null;
-            public IEnumerator<Entity> GetEnumerator() => throw null;
-            IEnumerator IEnumerable.GetEnumerator() => throw null;
-            public int IndexOf(Entity item) => throw null;
-
-            public Entity this[int index] { get => throw null; }
-            public int Count => throw null;
-        }
+        public IEnumerable<Entity> Entities => throw null;
     }
 }
