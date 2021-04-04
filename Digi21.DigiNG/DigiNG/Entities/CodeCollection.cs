@@ -7,7 +7,7 @@ namespace Digi21.DigiNG.Entities
     {
         public void Add(Code item) => throw null;
         public void Clear() => throw null;
-        public bool Contains(Code entidad) => throw null;
+        public bool Contains(Code code) => throw null;
         public void CopyTo(Code[] array, int arrayIndex) => throw null;
         public IEnumerator<Code> GetEnumerator() => throw null;
         IEnumerator IEnumerable.GetEnumerator() => throw null;
