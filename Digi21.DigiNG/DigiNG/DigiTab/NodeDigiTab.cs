@@ -5,8 +5,8 @@ namespace Digi21.DigiNG.DigiTab
 {
     public class NodeDigiTab : IDisposable
     {
-        public NodeDigiTab(string name) { throw null; }
-        public void Dispose() { throw null; }
+        public NodeDigiTab(string name) => throw null;
+        public void Dispose() => throw null;
         public int Priority { get => throw null; set => throw null; }
         public string ColorPhotogrammetric { get => throw null; set => throw null; }
         public string Color { get => throw null; set => throw null; }

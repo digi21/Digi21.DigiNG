@@ -2,7 +2,7 @@
 {
     public sealed class ConicCamera : Camera
     {
-        public ConicCamera() { throw null; }
+        public ConicCamera() => throw null;
         public double FieldOfView { get => throw null; set => throw null; }
     }
 }

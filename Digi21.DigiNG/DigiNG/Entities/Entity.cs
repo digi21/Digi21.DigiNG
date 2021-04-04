@@ -7,10 +7,10 @@ namespace Digi21.DigiNG.Entities
 {
     public abstract class Entity : IWindow3D, ICloneable, IDisposable
     {
-        public virtual Entity Clone() { throw null; }
-        object ICloneable.Clone() { throw null; }
-        public virtual void Dispose() { throw null; }
-        public override string ToString() { throw null; }
+        public virtual Entity Clone() => throw null;
+        object ICloneable.Clone() => throw null;
+        public virtual void Dispose() => throw null;
+        public override string ToString() => throw null;
         public Point3D W => throw null;
         public Point3D SW => throw null;
         public Point3D S => throw null;
@@ -24,12 +24,12 @@ namespace Digi21.DigiNG.Entities
         public double Height => throw null;
         public double Width => throw null;
         public bool Valid => throw null;
-        public double Zmax { get => throw null; set => throw null; }
-        public double Ymax { get => throw null; set => throw null; }
-        public double Xmax { get => throw null; set => throw null; }
-        public double Zmin { get => throw null; set => throw null; }
-        public double Ymin { get => throw null; set => throw null; }
-        public double? Xmin { get => throw null; set => throw null; }
+        public double Zmax => throw null;
+        public double Ymax => throw null;
+        public double Xmax => throw null;
+        public double Zmin => throw null;
+        public double Ymin => throw null;
+        public double? Xmin => throw null;
         public IDrawingFile Owner => throw null;
         public bool Deleted => throw null;
         public bool ReadOnly => throw null;

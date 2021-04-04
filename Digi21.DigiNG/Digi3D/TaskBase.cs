@@ -8,10 +8,10 @@
         protected string módulo;
         protected ITask[] hijos;
 
-        public TaskBase() { throw null; }
-        public TaskBase(string title, TaskSeverity severity) { throw null; }
-        public TaskBase(string title, TaskSeverity severity, string drawingFile, string module) { throw null; }
-        public TaskBase(string title, TaskSeverity severity, string drawingFile, string module, ITask[] childs) { throw null; }
+        public TaskBase() => throw null;
+        public TaskBase(string title, TaskSeverity severity) => throw null;
+        public TaskBase(string title, TaskSeverity severity, string drawingFile, string module) => throw null;
+        public TaskBase(string title, TaskSeverity severity, string drawingFile, string module, ITask[] childs) => throw null;
         public abstract void Execute();
 
         public ITask[] Childs { get => throw null; set => throw null; }

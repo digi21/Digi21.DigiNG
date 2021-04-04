@@ -5,10 +5,10 @@ namespace Digi21.DigiNG.DigiTab
 {
     public class GeometricRelationException : GeometryException
     {
-        public GeometricRelationException(Entity entity, string message) : base(string.Empty) { throw null; }
-        public GeometricRelationException(Entity entity, Point3D coordinates, string message) : base(string.Empty) { throw null; }
-        public GeometricRelationException(Entity entity, string message, GeometryException innerException) : base(string.Empty) { throw null; }
-        public GeometricRelationException(Entity entity, Point3D coordinates, string message, GeometryException innerException) : base(string.Empty) { throw null; }
+        public GeometricRelationException(Entity entity, string message) : base(string.Empty) => throw null;
+        public GeometricRelationException(Entity entity, Point3D coordinates, string message) : base(string.Empty) => throw null;
+        public GeometricRelationException(Entity entity, string message, GeometryException innerException) : base(string.Empty) => throw null;
+        public GeometricRelationException(Entity entity, Point3D coordinates, string message, GeometryException innerException) : base(string.Empty) => throw null;
         public Entity Entity { get => throw null; set => throw null; }
     }
 }
