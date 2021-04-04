@@ -73,7 +73,6 @@
     <Compile Include="DigiNG\DigiTab\ITrigger.cs" />
     <Compile Include="DigiNG\DigiTab\NodeDigiTab.cs" />
     <Compile Include="DigiNG\Entities\Code.cs" />
-    <Compile Include="DigiNG\Entities\CodeCollection.cs" />
     <Compile Include="DigiNG\Entities\Complex.cs" />
     <Compile Include="DigiNG\Entities\Entity.cs" />
     <Compile Include="DigiNG\Entities\IClippable.cs" />
