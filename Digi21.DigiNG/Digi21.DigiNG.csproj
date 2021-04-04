@@ -109,7 +109,6 @@
     <Compile Include="Math\IWindows2D.cs" />
     <Compile Include="Math\Point2D.cs" />
     <Compile Include="Math\Point3D.cs" />
-    <Compile Include="Math\Point3DCollection.cs" />
     <Compile Include="Math\Point3DEventArgs.cs" />
     <Compile Include="Math\Point3DReadOnlyCollection.cs" />
     <Compile Include="Math\Precision.cs" />
