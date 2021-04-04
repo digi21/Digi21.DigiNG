@@ -4,12 +4,12 @@ namespace Digi21.Math
 {
     public struct Window3D : IWindow3D, IDesplazable
     {
-        public double? Xmin { get => throw null; set => throw null; }
-        public double Ymin { get => throw null; set => throw null; }
-        public double Zmin { get => throw null; set => throw null; }
-        public double Xmax { get => throw null; set => throw null; }
-        public double Ymax { get => throw null; set => throw null; }
-        public double Zmax { get => throw null; set => throw null; }
+        public double? Xmin => throw null;
+        public double Ymin => throw null;
+        public double Zmin => throw null;
+        public double Xmax => throw null;
+        public double Ymax => throw null;
+        public double Zmax => throw null;
         public bool Valid => throw null;
         public double Width => throw null;
         public double Height => throw null;

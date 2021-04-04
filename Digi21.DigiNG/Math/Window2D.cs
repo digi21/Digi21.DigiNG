@@ -5,10 +5,10 @@ namespace Digi21.Math
     public struct Window2D : IWindow2D, IDesplazable
     {
         public static readonly Window2D WholeWorld;
-        public double? Xmin { get => throw null; set => throw null; }
-        public double Ymin { get => throw null; set => throw null; }
-        public double Xmax { get => throw null; set => throw null; }
-        public double Ymax { get => throw null; set => throw null; }
+        public double? Xmin => throw null;
+        public double Ymin => throw null;
+        public double Xmax => throw null;
+        public double Ymax => throw null;
         public bool Valid => throw null;
         public double Width => throw null;
         public double Height => throw null;

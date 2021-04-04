@@ -15,9 +15,9 @@ namespace Digi21.Math
         double Height { get; }
         double Width { get; }
         bool Valid { get; }
-        double Ymax { get; set; }
-        double Xmax { get; set; }
-        double Ymin { get; set; }
-        double? Xmin { get; set; }
+        double Ymax { get; }
+        double Xmax { get; }
+        double Ymin { get; }
+        double? Xmin { get; }
     }
 }
