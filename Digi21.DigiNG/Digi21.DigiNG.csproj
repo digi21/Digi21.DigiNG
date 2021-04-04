@@ -79,7 +79,6 @@
     <Compile Include="DigiNG\Entities\IClippable.cs" />
     <Compile Include="DigiNG\Entities\ICloseable.cs" />
     <Compile Include="DigiNG\Entities\IDirectionable.cs" />
-    <Compile Include="DigiNG\Entities\IJoinable.cs" />
     <Compile Include="DigiNG\Entities\ISnappable.cs" />
     <Compile Include="DigiNG\Entities\ITrimmable.cs" />
     <Compile Include="DigiNG\Entities\Line.cs" />
