@@ -13,6 +13,6 @@ namespace Digi21.DigiNG.Entities
         public new void Offset(Point3D offset) => throw null;
         public new void Offset(double x, double y) => throw null;
         public new void Offset(double x, double y, double z) => throw null;
-        public new Point3DCollection Points => throw null;
+        public new IList<Point3D> Points => throw null;
     }
 }
