@@ -38,6 +38,7 @@ namespace Digi21.DigiNG.Entities
         public int? Color { get => throw null; set => throw null; }
         public CodeCollection Codes => throw null;
         public bool Visible => throw null;
+        public bool Hidden { get => throw null; set => throw null; }
         public DateTime CreationTime => throw null;
         public int Offset => throw null;
         public IDictionary<string, IDictionary<string, object>> Database => throw null;
