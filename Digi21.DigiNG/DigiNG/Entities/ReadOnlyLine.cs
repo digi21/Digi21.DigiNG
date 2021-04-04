@@ -23,6 +23,6 @@ namespace Digi21.DigiNG.Entities
         public Segment FirstSegment => throw null;
         public Point3D LastVertex => throw null;
         public Point3D FirstVertex => throw null;
-        public Point3DReadOnlyCollection Points => throw null;
+        public IReadOnlyList<Point3D> Points => throw null;
     }
 }
