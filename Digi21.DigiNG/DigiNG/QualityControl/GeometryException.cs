@@ -1,7 +1,7 @@
 ﻿using Digi21.Math;
 using System;
 
-namespace Digi21.DigiNG.DigiTab
+namespace Digi21.DigiNG.QualityControl
 {
     public class GeometryException : Exception
     {

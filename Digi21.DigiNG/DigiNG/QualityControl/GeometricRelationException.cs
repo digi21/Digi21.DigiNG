@@ -1,7 +1,7 @@
 ﻿using Digi21.DigiNG.Entities;
 using Digi21.Math;
 
-namespace Digi21.DigiNG.DigiTab
+namespace Digi21.DigiNG.QualityControl
 {
     public class GeometricRelationException : GeometryException
     {

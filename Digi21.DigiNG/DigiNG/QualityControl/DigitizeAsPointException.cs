@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Digi21.DigiNG.DigiTab
+namespace Digi21.DigiNG.QualityControl
 {
     public class DigitizeAsPointException : Exception
     {

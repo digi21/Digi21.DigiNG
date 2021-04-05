@@ -65,12 +65,12 @@
     <Compile Include="Digi3D\TaskBase.cs" />
     <Compile Include="Digi3D\TaskMessageBox.cs" />
     <Compile Include="Digi3D\TaskSeverity.cs" />
-    <Compile Include="DigiNG\DigiTab\DatabaseAttributeException.cs" />
+    <Compile Include="DigiNG\QualityControl\DatabaseAttributeException.cs" />
     <Compile Include="DigiNG\DigiTab\DigiTab.cs" />
-    <Compile Include="DigiNG\DigiTab\DigitizeAsPointException.cs" />
-    <Compile Include="DigiNG\DigiTab\GeometricRelationException.cs" />
-    <Compile Include="DigiNG\DigiTab\GeometryException.cs" />
-    <Compile Include="DigiNG\DigiTab\ITrigger.cs" />
+    <Compile Include="DigiNG\QualityControl\DigitizeAsPointException.cs" />
+    <Compile Include="DigiNG\QualityControl\GeometricRelationException.cs" />
+    <Compile Include="DigiNG\QualityControl\GeometryException.cs" />
+    <Compile Include="DigiNG\QualityControl\ITrigger.cs" />
     <Compile Include="DigiNG\DigiTab\NodeDigiTab.cs" />
     <Compile Include="DigiNG\Entities\Code.cs" />
     <Compile Include="DigiNG\Entities\Complex.cs" />
@@ -120,5 +120,6 @@
   <ItemGroup>
     <None Include="certificadoSxsDigi21.pfx" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

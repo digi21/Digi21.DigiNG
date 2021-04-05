@@ -1,7 +1,7 @@
 ﻿using Digi21.DigiNG.Entities;
 using System.Collections.Generic;
 
-namespace Digi21.DigiNG.DigiTab
+namespace Digi21.DigiNG.QualityControl
 {
     public interface ITrigger
     {
