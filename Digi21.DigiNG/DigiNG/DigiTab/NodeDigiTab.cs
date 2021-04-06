@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Digi21.DigiNG.DigiTab
 {
-    public class NodeDigiTab : IDisposable
+    public sealed class NodeDigiTab : IDisposable
     {
         public NodeDigiTab(string name) => throw null;
         public void Dispose() => throw null;
