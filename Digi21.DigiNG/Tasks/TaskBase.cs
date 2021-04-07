@@ -2,7 +2,6 @@
 {
     public abstract class TaskBase : ITask
     {
-
         protected TaskBase() => throw null;
         protected TaskBase(string title, TaskSeverity severity) => throw null;
         protected TaskBase(string title, TaskSeverity severity, string drawingFile, string module) => throw null;
