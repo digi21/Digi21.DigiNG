@@ -3,7 +3,7 @@
     public interface ITask
     {
         void Execute();
-        ITask[] Childs { get; }
+        ITask[] Children { get; }
         string Module { get; }
         string DrawingFile { get; }
         TaskSeverity Severity { get; }
