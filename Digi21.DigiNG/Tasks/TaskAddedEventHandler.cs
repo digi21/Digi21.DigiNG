@@ -1,4 +1,4 @@
-﻿namespace Digi21.Digi3D
+﻿namespace Digi21.Tasks
 {
     public delegate void TaskAddedEventHandler(object sender, TaskAddedEventArgs e);
 }

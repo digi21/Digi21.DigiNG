@@ -1,4 +1,4 @@
-﻿namespace Digi21.Digi3D
+﻿namespace Digi21.Tasks
 {
     public delegate void ProgressEventHandler(object sender, ProgressEventArgs e);
 }
