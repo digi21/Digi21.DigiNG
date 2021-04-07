@@ -53,8 +53,6 @@
     <Compile Include="Cameras\ConicCamera.cs" />
     <Compile Include="Cameras\OrtographicCamera.cs" />
     <Compile Include="Cameras\StandarPointOfView.cs" />
-    <Compile Include="Databases\DynamicPropertyAttribute.cs" />
-    <Compile Include="Databases\IDynamicProperty.cs" />
     <Compile Include="Digi3D\ITask.cs" />
     <Compile Include="Digi3D\ProgressEventArgs.cs" />
     <Compile Include="Digi3D\ProgressEventHandler.cs" />
