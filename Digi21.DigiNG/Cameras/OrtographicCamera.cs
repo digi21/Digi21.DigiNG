@@ -8,7 +8,7 @@ namespace Digi21.DigiNG.Cameras
         public OrthographicCamera(IWindow3D window) => throw null;
         public OrthographicCamera(string name) => throw null;
         public OrthographicCamera(string name, IWindow3D window) => throw null;
-        public OrthographicCamera(IWindow3D window, double pitch, double heading, double roll) => throw null;
+        public OrthographicCamera(IWindow3D window, double yaw, double pitch, double roll) => throw null;
         public OrthographicCamera(string name, IWindow3D window, double pitch, double heading, double roll) => throw null;
 
         public double Bottom { get => throw null; set => throw null; }
