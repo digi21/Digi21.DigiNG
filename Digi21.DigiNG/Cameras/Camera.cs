@@ -11,7 +11,7 @@ namespace Digi21.DigiNG.Cameras
         public double Far { get => throw null; set => throw null; }
         public double Near { get => throw null; set => throw null; }
         public double Roll { get => throw null; set => throw null; }
-        public double Heading { get => throw null; set => throw null; }
+        public double Yaw { get => throw null; set => throw null; }
         public double Pitch { get => throw null; set => throw null; }
         public Point3D Position { get => throw null; set => throw null; }
         public string Name { get => throw null; set => throw null; }
