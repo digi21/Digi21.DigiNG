@@ -2,11 +2,6 @@
 {
     public abstract class TaskBase : ITask
     {
-        private string título;
-        private TaskSeverity severidad;
-        private string archivoDibujo;
-        private string módulo;
-        private ITask[] hijos;
 
         protected TaskBase() => throw null;
         protected TaskBase(string title, TaskSeverity severity) => throw null;
