@@ -61,7 +61,6 @@
     <Compile Include="Digi3D\TaskAddedEventArgs.cs" />
     <Compile Include="Digi3D\TaskAddedEventHandler.cs" />
     <Compile Include="Digi3D\TaskBase.cs" />
-    <Compile Include="Digi3D\TaskMessageBox.cs" />
     <Compile Include="Digi3D\TaskSeverity.cs" />
     <Compile Include="DigiNG\DigiTab\DigiTab.cs" />
     <Compile Include="DigiNG\DigiTab\NodeDigiTab.cs" />
