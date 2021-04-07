@@ -2,16 +2,16 @@
 {
     public abstract class TaskBase : ITask
     {
-        protected string título;
-        protected TaskSeverity severidad;
-        protected string archivoDibujo;
-        protected string módulo;
-        protected ITask[] hijos;
+        private string título;
+        private TaskSeverity severidad;
+        private string archivoDibujo;
+        private string módulo;
+        private ITask[] hijos;
 
-        public TaskBase() => throw null;
-        public TaskBase(string title, TaskSeverity severity) => throw null;
-        public TaskBase(string title, TaskSeverity severity, string drawingFile, string module) => throw null;
-        public TaskBase(string title, TaskSeverity severity, string drawingFile, string module, ITask[] childs) => throw null;
+        protected TaskBase() => throw null;
+        protected TaskBase(string title, TaskSeverity severity) => throw null;
+        protected TaskBase(string title, TaskSeverity severity, string drawingFile, string module) => throw null;
+        protected TaskBase(string title, TaskSeverity severity, string drawingFile, string module, ITask[] childs) => throw null;
         public abstract void Execute();
 
         public ITask[] Childs { get => throw null; set => throw null; }
