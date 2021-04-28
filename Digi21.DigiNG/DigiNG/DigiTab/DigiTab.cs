@@ -13,6 +13,7 @@ namespace Digi21.DigiNG.DigiTab
         public void Write(string path) => throw null;
         public IDictionary<string, IList<Tuple<string, Type>>> Tables => throw null;
         public IEnumerable<NodeDigiTab> Codes => throw null;
-        public NodeDigiTab this[string name] { get => throw null; }
+        public NodeDigiTab this[string name] => throw null;
+        public string Path => throw null;
     }
 }
