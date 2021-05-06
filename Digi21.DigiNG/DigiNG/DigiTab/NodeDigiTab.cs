@@ -16,5 +16,6 @@ namespace Digi21.DigiNG.DigiTab
         public string Table { get => throw null; set => throw null; }
         public string Description { get => throw null; set => throw null; }
         public string Name => throw null;
+        public GeometryType Type { get => throw null; set => throw null; }
     }
 }
