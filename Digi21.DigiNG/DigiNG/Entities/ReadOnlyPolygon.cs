@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Digi21.DigiNG.Entities
 {
-    public class ReadOnlyPolygon : Entity, ISnapable, IClippable, ITrimable
+    public class ReadOnlyPolygon : Entity, ISnapable, IClippable, ITrimable, ICloseable
     {
         public PointPosition AnalyzePointPosition(Point3D point) => throw null;
         public IEnumerable<Entity> Clip(ReadOnlyLine limit) => throw null;
@@ -18,5 +18,7 @@ namespace Digi21.DigiNG.Entities
         public IReadOnlyList<ReadOnlyLine> Holes => throw null;
         public IReadOnlyList<Point3D> Points => throw null;
         public Point3D InteriorPoint => throw null;
+        public bool ClosedXYZ => throw null;
+        public bool Closed => throw null;
     }
 }
