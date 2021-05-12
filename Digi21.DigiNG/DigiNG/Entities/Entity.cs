@@ -5,11 +5,10 @@ using System.Collections.Generic;
 
 namespace Digi21.DigiNG.Entities
 {
-    public abstract class Entity : IWindow3D, ICloneable, IDisposable
+    public abstract class Entity : IWindow3D, ICloneable
     {
         public Entity Clone() => throw null;
         object ICloneable.Clone() => throw null;
-        public virtual void Dispose() => throw null;
         public override string ToString() => throw null;
         public Point3D W => throw null;
         public Point3D SW => throw null;
