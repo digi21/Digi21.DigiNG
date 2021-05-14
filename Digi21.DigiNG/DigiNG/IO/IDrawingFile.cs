@@ -12,7 +12,6 @@ namespace Digi21.DigiNG.IO
         ReadOnlyPolygon Add(Polygon polygon);
         ReadOnlyText Add(Text text);
         void Add(IEnumerable<Entity> entities);
-        void Add(Entity entity, IDictionary<string, IDictionary<string, object>> databaseAttributes);
         void Delete(Entity entity);
         void Delete(IEnumerable<Entity> entities);
         string Wkt { get; }
