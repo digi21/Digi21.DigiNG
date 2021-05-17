@@ -14,7 +14,7 @@ namespace Digi21.DigiNG.Entities
         public int? Id => throw null;
         public bool Visible { get => throw null; set => throw null; }
         public bool VisiblePhotogrammetricWindow { get => throw null; set => throw null; }
-        public IDictionary<string, object> Attributes => throw null;
+        public IDictionary<string, object> Attributes { get => throw null; set => throw null; }
         public static bool operator ==(Code a, Code b) => throw null;
         public static bool operator !=(Code a, Code b) => throw null;
         public static string Compose(string stringToCompose, string wildCard) => throw null;
