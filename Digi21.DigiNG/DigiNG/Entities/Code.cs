@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections.Generic;
 
 namespace Digi21.DigiNG.Entities
@@ -12,8 +13,8 @@ namespace Digi21.DigiNG.Entities
         public string Name => throw null;
         public int? Table => throw null;
         public int? Id => throw null;
-        public bool Visible { get => throw null; set => throw null; }
-        public bool VisiblePhotogrammetricWindow { get => throw null; set => throw null; }
+        public uint Visible { get => throw null; set => throw null; }
+        public uint VisiblePhotogrammetricWindow { get => throw null; set => throw null; }
         public IDictionary<string, object> Attributes { get => throw null; set => throw null; }
         public static bool operator ==(Code a, Code b) => throw null;
         public static bool operator !=(Code a, Code b) => throw null;
