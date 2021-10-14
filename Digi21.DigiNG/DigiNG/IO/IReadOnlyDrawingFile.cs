@@ -5,6 +5,7 @@ namespace Digi21.DigiNG.IO
 {
     public interface IReadOnlyDrawingFile : IEnumerable<Entity>
     {
+        string Path { get; }
         string ConnectionString { get; }
     }
 }
