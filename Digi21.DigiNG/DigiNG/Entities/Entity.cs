@@ -8,8 +8,11 @@ namespace Digi21.DigiNG.Entities
     public abstract class Entity : IWindow3D, ICloneable
     {
         public Entity Clone() => throw null;
+        #region ICloneable
         object ICloneable.Clone() => throw null;
+        #endregion
         public override string ToString() => throw null;
+        #region IWindow3D
         public Point3D W => throw null;
         public Point3D SW => throw null;
         public Point3D S => throw null;
@@ -29,6 +32,7 @@ namespace Digi21.DigiNG.Entities
         public double Zmin => throw null;
         public double Ymin => throw null;
         public double? Xmin => throw null;
+        #endregion
         public IDrawingFile Owner => throw null;
         public bool Deleted => throw null;
         public bool ReadOnly => throw null;
