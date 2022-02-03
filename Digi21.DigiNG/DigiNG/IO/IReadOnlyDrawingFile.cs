@@ -10,7 +10,7 @@ namespace Digi21.DigiNG.IO
     {
         string Path { get; }
         string ConnectionString { get; }
-
         int IndexOf(Entity entity);
+        bool Visible { get; set; }
     }
 }
