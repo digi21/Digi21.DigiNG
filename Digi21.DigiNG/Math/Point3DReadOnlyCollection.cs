@@ -12,5 +12,6 @@ namespace Digi21.Math
         public int IndexOf(Point3D item) => throw null;
         public Point3D this[int index] { get => throw null; }
         public int Count => throw null;
+        public int IndexOf(Point2D item) => throw null;
     }
 }
