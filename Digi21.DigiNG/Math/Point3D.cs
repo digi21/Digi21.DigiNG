@@ -18,6 +18,10 @@ namespace Digi21.Math
         public static Point3D operator -(Point3D a, Point3D b) => throw null;
         public static Point3D operator *(Point3D a, double factor) => throw null;
         public static Point3D operator /(Point3D a, double factor) => throw null;
+        public static bool operator ==(Point3D a, Digi21.Math.Point2D b) => throw null;
+        public static bool operator ==(Digi21.Math.Point2D a, Point3D b) => throw null;
+        public static bool operator !=(Point3D a, Digi21.Math.Point2D b) => throw null;
+        public static bool operator !=(Digi21.Math.Point2D a, Point3D b) => throw null;
         public static double DotProduct(Point3D a, Point3D b) => throw null;
         public static Point3D CrossProduct(Point3D a, Point3D b) => throw null;
         public double Module => throw null;
