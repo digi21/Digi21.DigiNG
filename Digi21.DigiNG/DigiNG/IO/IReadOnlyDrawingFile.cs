@@ -9,6 +9,7 @@ namespace Digi21.DigiNG.IO
         , IWindow3D
     {
         string Path { get; }
+        string Wkt { get; }
         string ConnectionString { get; }
         int IndexOf(Entity entity);
         bool Visible { get; set; }

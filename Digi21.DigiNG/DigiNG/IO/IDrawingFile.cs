@@ -14,7 +14,6 @@ namespace Digi21.DigiNG.IO
         void Add(IEnumerable<Entity> entities);
         void Delete(Entity entity);
         void Delete(IEnumerable<Entity> entities);
-        string Wkt { get; }
         IDictionary<string, int> DatabaseTables { get; }
         bool CanWrite { get; }
         bool CanRead { get; }
