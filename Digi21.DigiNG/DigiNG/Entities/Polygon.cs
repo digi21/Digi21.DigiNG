@@ -9,6 +9,6 @@ namespace Digi21.DigiNG.Entities
         public Polygon(IEnumerable<Code> codigos) => throw null;
         public static Polygon JoinPolygons(Entity a, Entity b) => throw null;
         public new IList<Line> Holes => throw null;
-        public new IList<Point3D> Points => throw null;
+        public new Point3DCollection Points => throw null;
     }
 }

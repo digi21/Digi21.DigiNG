@@ -55,6 +55,7 @@
     <Compile Include="Cameras\StandarPointOfView.cs" />
     <Compile Include="DigiNG\DigiTab\GeometryType.cs" />
     <Compile Include="DigiNG\Entities\GeometryFactory.cs" />
+    <Compile Include="Math\Point3DCollection.cs" />
     <Compile Include="Tasks\ITask.cs" />
     <Compile Include="Tasks\ProgressEventArgs.cs" />
     <Compile Include="Tasks\ProgressEventHandler.cs" />
