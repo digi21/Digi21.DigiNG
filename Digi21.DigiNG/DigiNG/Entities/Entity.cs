@@ -43,7 +43,7 @@ namespace Digi21.DigiNG.Entities
         public bool Visible => throw null;
         public bool Hidden { get => throw null; set => throw null; }
         public DateTime CreationTime => throw null;
-        public ulong Offset => throw null;
+        public string FilePointer => throw null;
         public object UserData { get => throw null; set => throw null; }
     }
 }
