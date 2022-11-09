@@ -34,6 +34,8 @@ namespace Digi21.DigiNG.Entities
         public double? Xmin => throw null;
         #endregion
         public IDrawingFile Owner => throw null;
+        public IDictionary<string, object> Attributes { get => throw null; set => throw null; }
+
         public bool Deleted => throw null;
         public bool ReadOnly => throw null;
         public int? FillColor { get => throw null; set => throw null; }
