@@ -1,34 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{01E76C8F-987C-4631-9E32-29C1D5C9E72F}</ProjectGuid>
+    <TargetFramework>net8.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Digi21</RootNamespace>
-    <AssemblyName>Digi21.DigiNG</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -36,85 +11,35 @@
   <PropertyGroup>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
     <AssemblyOriginatorKeyFile>certificadoSxsDigi21.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyTitle>Digi21.DigiNG</AssemblyTitle>
+    <Description>This package contains runtime assemblies with types for developing applications with the Digi3D.NET engine.
+
+A Digi3D.NET license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra</Description>
+    <Company>Dreaming With Objects S.L.</Company>
+    <Product>Digi3D.NET</Product>
+    <Copyright>(c) 2000-2024 Dreaming With Objects S.L.</Copyright>
+    <AssemblyVersion>24.0.0</AssemblyVersion>
+    <FileVersion>6.0.0.0</FileVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Digi21.DigiNG</Title>
+    <Version>24.0.0</Version>
+    <Authors>José Ángel Martínez Torres</Authors>
+    <PackageProjectUrl>https://digi3d.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/digi21/Digi21.DigiNG.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Digi3D, Digi3D.NET, Digi21, Digi</PackageTags>
+    <PackageReleaseNotes>Please visit https://www.digi21.net/Digi3D/Download to see the release notes.</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>IconoDigi21.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <None Include="..\NuGet\IconoDigi21.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cameras\Camera.cs" />
-    <Compile Include="Cameras\ConicCamera.cs" />
-    <Compile Include="Cameras\OrtographicCamera.cs" />
-    <Compile Include="Cameras\StandarPointOfView.cs" />
-    <Compile Include="DigiNG\DigiTab\GeometryType.cs" />
-    <Compile Include="DigiNG\Entities\GeometryFactory.cs" />
-    <Compile Include="Math\Point3DCollection.cs" />
-    <Compile Include="Tasks\ITask.cs" />
-    <Compile Include="Tasks\ProgressEventArgs.cs" />
-    <Compile Include="Tasks\ProgressEventHandler.cs" />
-    <Compile Include="Tasks\ResultsAddedEventArgs.cs" />
-    <Compile Include="Tasks\ResultsAddedEventHandler.cs" />
-    <Compile Include="Tasks\TaskAddedEventArgs.cs" />
-    <Compile Include="Tasks\TaskAddedEventHandler.cs" />
-    <Compile Include="Tasks\TaskBase.cs" />
-    <Compile Include="Tasks\TaskSeverity.cs" />
-    <Compile Include="DigiNG\DigiTab\DigiTab.cs" />
-    <Compile Include="DigiNG\DigiTab\NodeDigiTab.cs" />
-    <Compile Include="DigiNG\Entities\Code.cs" />
-    <Compile Include="DigiNG\Entities\Complex.cs" />
-    <Compile Include="DigiNG\Entities\Entity.cs" />
-    <Compile Include="DigiNG\Entities\IClippable.cs" />
-    <Compile Include="DigiNG\Entities\ICloseable.cs" />
-    <Compile Include="DigiNG\Entities\IDirectionable.cs" />
-    <Compile Include="DigiNG\Entities\ISnappable.cs" />
-    <Compile Include="DigiNG\Entities\ITrimmable.cs" />
-    <Compile Include="DigiNG\Entities\Line.cs" />
-    <Compile Include="DigiNG\Entities\Point.cs" />
-    <Compile Include="DigiNG\Entities\PointPosition.cs" />
-    <Compile Include="DigiNG\Entities\Polygon.cs" />
-    <Compile Include="DigiNG\Entities\ReadOnlyComplex.cs" />
-    <Compile Include="DigiNG\Entities\ReadOnlyLine.cs" />
-    <Compile Include="DigiNG\Entities\ReadOnlyPoint.cs" />
-    <Compile Include="DigiNG\Entities\ReadOnlyPolygon.cs" />
-    <Compile Include="DigiNG\Entities\ReadOnlyText.cs" />
-    <Compile Include="DigiNG\Entities\Relations\AreaArea.cs" />
-    <Compile Include="DigiNG\Entities\Relations\LineArea.cs" />
-    <Compile Include="DigiNG\Entities\Relations\LineLine.cs" />
-    <Compile Include="DigiNG\Entities\Relations\PointArea.cs" />
-    <Compile Include="DigiNG\Entities\Relations\PointLine.cs" />
-    <Compile Include="DigiNG\Entities\Relations\PointPoint.cs" />
-    <Compile Include="DigiNG\Entities\SegmentPointer.cs" />
-    <Compile Include="DigiNG\Entities\Text.cs" />
-    <Compile Include="DigiNG\Entities\TextJustification.cs" />
-    <Compile Include="DigiNG\Entities\VertexPointer.cs" />
-    <Compile Include="DigiNG\IO\DelegateGetWkt.cs" />
-    <Compile Include="DigiNG\IO\IDrawingFile.cs" />
-    <Compile Include="DigiNG\IO\IReadOnlyDrawingFile.cs" />
-    <Compile Include="Math\Angles.cs" />
-    <Compile Include="Math\IDesplazable.cs" />
-    <Compile Include="Math\IWindow3D.cs" />
-    <Compile Include="Math\IWindows2D.cs" />
-    <Compile Include="Math\Point2D.cs" />
-    <Compile Include="Math\Point3D.cs" />
-    <Compile Include="Math\Point3DEventArgs.cs" />
-    <Compile Include="Math\Point3DReadOnlyCollection.cs" />
-    <Compile Include="Math\Precision.cs" />
-    <Compile Include="Math\Segment.cs" />
-    <Compile Include="Math\SegmentRelation.cs" />
-    <Compile Include="Math\Window2D.cs" />
-    <Compile Include="Math\Window3D.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="certificadoSxsDigi21.pfx" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

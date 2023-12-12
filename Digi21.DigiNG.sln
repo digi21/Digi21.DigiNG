@@ -1,9 +1,9 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digi21.DigiNG", "Digi21.DigiNG\Digi21.DigiNG.csproj", "{01E76C8F-987C-4631-9E32-29C1D5C9E72F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digi21.DigiNG", "Digi21.DigiNG\Digi21.DigiNG.csproj", "{01E76C8F-987C-4631-9E32-29C1D5C9E72F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
