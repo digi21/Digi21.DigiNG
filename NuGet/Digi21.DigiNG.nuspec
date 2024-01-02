@@ -19,6 +19,9 @@
 		<copyright>(c) 2000-2024 Dreaming With Objects S.L.</copyright>
 		<tags>Digi3D, Digi3D.NET, Digi21, Digi</tags>
 		<repository type="git" url="https://github.com/digi21/Digi21.DigiNG.git" commit="7fefee926bb7d03210a6195b3c213120253a2e91" />
+		<dependencies>
+			<group targetFramework="net8.0"/>
+		</dependencies>
 	</metadata>
 	<files>
 		<file src="..\Digi21.DigiNG\obj\Release\net8.0\ref\Digi21.DigiNG.dll" target="ref\net8.0\Digi21.DigiNG.dll" />
