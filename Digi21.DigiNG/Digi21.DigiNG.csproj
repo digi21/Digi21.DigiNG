@@ -9,7 +9,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
     <AssemblyOriginatorKeyFile>certificadoSxsDigi21.pfx</AssemblyOriginatorKeyFile>
     <AssemblyTitle>Digi21.DigiNG</AssemblyTitle>
     <Description>This package contains runtime assemblies with types for developing applications with the Digi3D.NET engine.
@@ -20,7 +20,7 @@ A Digi3D.NET license is required to run applications that use the assemblies pub
     <Copyright>(c) 2000-2024 Dreaming With Objects S.L.</Copyright>
     <AssemblyVersion>24.0.0</AssemblyVersion>
     <FileVersion>24.0.0.0</FileVersion>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Title>Digi21.DigiNG</Title>
     <Version>24.0.0</Version>
     <Authors>José Ángel Martínez Torres</Authors>
@@ -33,7 +33,9 @@ A Digi3D.NET license is required to run applications that use the assemblies pub
     <PackageIcon>IconoDigi21.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <None Include="..\NuGet\IconoDigi21.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>
