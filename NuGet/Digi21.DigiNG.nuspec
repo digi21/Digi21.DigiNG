@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
 	<metadata>
 		<id>Digi21.DigiNG</id>
 		<version>24.0.0</version>
@@ -8,12 +8,12 @@
 		<owners></owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<license type="expression">MIT</license>
+		<readme>README.md</readme>
 		<icon>IconoDigi21.png</icon>
 		<projectUrl>https://digi3d.net/</projectUrl>
-		<description>
-			This package contains runtime assemblies with types for developing applications with the Digi3D.NET engine.
+		<description>This package contains reference assemblies with types for developing applications with the Digi3D.NET engine.
 
-			A Digi3D.NET license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra
+A Digi3D.NET license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra
 		</description>
 		<releaseNotes>Please visit https://www.digi21.net/Digi3D/Download to see the release notes.</releaseNotes>
 		<copyright>(c) 2000-2024 Dreaming With Objects S.L.</copyright>
@@ -26,6 +26,7 @@
 	<files>
 		<file src="..\Digi21.DigiNG\obj\Release\net8.0\ref\Digi21.DigiNG.dll" target="ref\net8.0\Digi21.DigiNG.dll" />
 		<file src="IconoDigi21.png" target="IconoDigi21.png" />
+		<file src="README.md" target="README.md" />
 		<file src="Digi21.DigiNG.targets" target="build\Digi21.DigiNG.targets" />
 		<file src="C:\Users\josea\source\repos\AddRuntimeToDepsJson\AddRuntimeToDepsJson\bin\Release\net8.0\AddRuntimeToDepsJson.deps.json" target="build\AddRuntimeToDepsJson.deps.json" />
 		<file src="C:\Users\josea\source\repos\AddRuntimeToDepsJson\AddRuntimeToDepsJson\bin\Release\net8.0\AddRuntimeToDepsJson.dll" target="build\AddRuntimeToDepsJson.dll" />
