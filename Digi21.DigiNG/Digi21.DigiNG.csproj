@@ -10,7 +10,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
-    <AssemblyOriginatorKeyFile>certificadoSxsDigi21.pfx</AssemblyOriginatorKeyFile>
+    <!-- Public key only: reference assemblies need the Digi21 identity, not a real signature. -->
+    <AssemblyOriginatorKeyFile>..\Digi21.PublicKey.snk</AssemblyOriginatorKeyFile>
+    <PublicSign>true</PublicSign>
     <AssemblyTitle>Digi21.DigiNG</AssemblyTitle>
     <Description>This package contains reference assemblies with types for developing applications with the Digi3D.AI engine.
 

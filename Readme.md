@@ -7,3 +7,7 @@ This repository contains the source code of the [reference assembly](https://doc
 It provides mathematical types, types to instantiate the different types of geometries supported by Digi3D.AI, types related to importers/exporters of drawing files, types related to code tables, databases, cameras, etc.
 
 The package also adds [`Digi3DAssemblyResolver.cs`](NuGet/contentFiles/cs/any/Digi3DAssemblyResolver.cs) to the C# projects that reference it, directly or through any other `Digi21.DigiNG.*` package. It loads the runtime assemblies from the Digi3D.AI installation folder, so the application can be installed in any folder.
+
+## Publishing
+
+Push a tag `v<version>` whose version matches `<version>` in the `.nuspec` of the `NuGet` folder. The *Release* workflow builds the reference assembly, packs it and publishes it to nuget.org with trusted publishing (repository secret `NUGET_USER`, the nuget.org profile name). The packages are not author-signed; the reference assembly is public-signed with `Digi21.PublicKey.snk`, which contains only the public key.
