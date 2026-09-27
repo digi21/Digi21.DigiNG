@@ -5,6 +5,7 @@ namespace Digi21.DigiNG.DigiTab
 {
     public sealed class DigiTab : IDisposable
     {
+        internal DigiTab() => throw null;
         public void AddCode(NodeDigiTab code) => throw null;
         public void Dispose() => throw null;
         public bool HasCode(string name) => throw null;

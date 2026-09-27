@@ -4,6 +4,7 @@ namespace Digi21.DigiNG.Entities
 {
     public class ReadOnlyPoint : Entity, ISnapable
     {
+        internal ReadOnlyPoint() => throw null;
         public new Point Clone() => throw null;
         public Point3D Distance(Point3D coordinate) => throw null;
         public double NearestSegment(Point3D coordinate, out Point3D calculatedCoordinate, out int segment) => throw null;

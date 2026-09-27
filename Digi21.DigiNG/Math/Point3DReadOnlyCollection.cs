@@ -5,6 +5,7 @@ namespace Digi21.Math
 {
     public class Point3DReadOnlyCollection : IReadOnlyList<Point3D>
     {
+        internal Point3DReadOnlyCollection() => throw null;
         public bool Contains(Point3D vertice) => throw null;
         public void CopyTo(Point3D[] array, int arrayIndex) => throw null;
         public IEnumerator<Point3D> GetEnumerator() => throw null;

@@ -7,6 +7,7 @@ namespace Digi21.DigiNG.Entities
 {
     public abstract class Entity : IWindow3D, ICloneable
     {
+        internal Entity() => throw null;
         public Entity Clone() => throw null;
         #region ICloneable
         object ICloneable.Clone() => throw null;

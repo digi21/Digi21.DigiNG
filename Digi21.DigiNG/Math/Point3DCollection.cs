@@ -7,6 +7,7 @@ namespace Digi21.Math
         : IList<Point3D>
         , IReadOnlyList<Point3D>
     {
+        internal Point3DCollection() => throw null;
         public IEnumerator<Point3D> GetEnumerator() => throw null;
         IEnumerator IEnumerable.GetEnumerator() => throw null;
         public void Add(Point3D item) => throw null;

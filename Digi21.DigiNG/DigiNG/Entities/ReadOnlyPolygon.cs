@@ -6,6 +6,7 @@ namespace Digi21.DigiNG.Entities
 {
     public class ReadOnlyPolygon : Entity, ISnapable, IClippable, ITrimable, ICloseable
     {
+        internal ReadOnlyPolygon() => throw null;
         public PointPosition AnalyzePointPosition(Point3D point) => throw null;
         public IEnumerable<Entity> Clip(ReadOnlyLine limit) => throw null;
         public new Polygon Clone() => throw null;

@@ -5,6 +5,7 @@ namespace Digi21.DigiNG.Entities
 {
     public class ReadOnlyLine : Entity, ICloseable, ISnapable, IClippable, ITrimable
     {
+        internal ReadOnlyLine() => throw null;
         public PointPosition AnalyzePointPosition(Point3D coordinate) => throw null;
         public IEnumerable<Entity> Clip(ReadOnlyLine limit) => throw null;
         public new Line Clone() => throw null;

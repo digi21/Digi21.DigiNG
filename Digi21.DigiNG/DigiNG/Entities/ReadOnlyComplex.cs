@@ -4,6 +4,7 @@ namespace Digi21.DigiNG.Entities
 {
     public class ReadOnlyComplex : Entity
     {
+        internal ReadOnlyComplex() => throw null;
         public new Complex Clone() => throw null;
         public override string ToString() => throw null;
 
