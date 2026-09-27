@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <OutputType>Library</OutputType>
     <RootNamespace>Digi21</RootNamespace>
     <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
@@ -12,22 +12,22 @@
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
     <AssemblyOriginatorKeyFile>certificadoSxsDigi21.pfx</AssemblyOriginatorKeyFile>
     <AssemblyTitle>Digi21.DigiNG</AssemblyTitle>
-    <Description>This package contains runtime assemblies with types for developing applications with the Digi3D.NET engine.
+    <Description>This package contains reference assemblies with types for developing applications with the Digi3D.AI engine.
 
-A Digi3D.NET license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra</Description>
+A Digi3D.AI license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra</Description>
     <Company>Dreaming With Objects S.L.</Company>
-    <Product>Digi3D.NET</Product>
-    <Copyright>(c) 2000-2024 Dreaming With Objects S.L.</Copyright>
-    <AssemblyVersion>24.0.0</AssemblyVersion>
-    <FileVersion>24.0.0.0</FileVersion>
+    <Product>Digi3D.AI</Product>
+    <Copyright>(c) 2000-2026 Dreaming With Objects S.L.</Copyright>
+    <AssemblyVersion>26.0.0</AssemblyVersion>
+    <FileVersion>26.0.0.0</FileVersion>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Title>Digi21.DigiNG</Title>
-    <Version>24.0.0</Version>
+    <Version>26.0.0</Version>
     <Authors>José Ángel Martínez Torres</Authors>
     <PackageProjectUrl>https://digi3d.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/digi21/Digi21.DigiNG.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>Digi3D, Digi3D.NET, Digi21, Digi</PackageTags>
+    <PackageTags>Digi3D, Digi3D.AI, Digi21, Digi</PackageTags>
     <PackageReleaseNotes>Please visit https://www.digi21.net/Digi3D/Download to see the release notes.</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>IconoDigi21.png</PackageIcon>
