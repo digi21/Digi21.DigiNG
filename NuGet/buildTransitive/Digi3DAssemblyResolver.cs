@@ -20,6 +20,7 @@ namespace Digi21.DigiNG.Runtime
                 global::System.Runtime.Loader.AssemblyLoadContext.Default.Resolving += Resolve;
         }
 
+        // Never throws: an exception here would replace the runtime's FileNotFoundException and skip the other handlers.
         [global::System.Runtime.Versioning.SupportedOSPlatform("windows")]
         private static global::System.Reflection.Assembly? Resolve(global::System.Runtime.Loader.AssemblyLoadContext context, global::System.Reflection.AssemblyName name)
         {
@@ -30,48 +31,79 @@ namespace Digi21.DigiNG.Runtime
             if (root is null)
                 return null;
 
-            // Satellite assemblies are requested as "<Name>.resources" and live in a culture subfolder.
-            var culture = name.CultureName ?? "";
-            var isSatellite = culture.Length > 0 && name.Name.EndsWith(".resources", global::System.StringComparison.Ordinal);
-            var baseName = isSatellite ? name.Name.Substring(0, name.Name.Length - ".resources".Length) : name.Name;
-            var fileName = name.Name + ".dll";
-
-            // Layout of the installation: <root>\<Name>\<version>\ or <root>\<Name>\<version>\lib\<tfm>\.
-            foreach (var versionFolder in VersionFolders(global::System.IO.Path.Combine(root, baseName), name.Version))
+            foreach (var file in Candidates(root, name))
             {
-                var file = Find(versionFolder, culture, fileName, isSatellite);
-                if (file is not null)
-                    return context.LoadFromAssemblyPath(file);
-
-                var lib = global::System.IO.Path.Combine(versionFolder, "lib");
-                if (!global::System.IO.Directory.Exists(lib))
+                if (!Matches(file, name))
                     continue;
 
-                foreach (var tfmFolder in global::System.IO.Directory.GetDirectories(lib))
+                try
                 {
-                    file = Find(tfmFolder, culture, fileName, isSatellite);
-                    if (file is not null)
-                        return context.LoadFromAssemblyPath(file);
+                    return context.LoadFromAssemblyPath(file);
+                }
+                catch (global::System.Exception)
+                {
                 }
             }
 
-            var rootFile = Find(root, culture, fileName, isSatellite);
-            return rootFile is null ? null : context.LoadFromAssemblyPath(rootFile);
+            return null;
         }
 
-        private static string? Find(string folder, string culture, string fileName, bool isSatellite)
+        // Layout of the installation: <root>\<Name>\<version>\, <root>\<Name>\<version>\lib\<tfm>\ and <root>.
+        // Satellite assemblies are requested as "<Name>.resources" and live in a culture subfolder.
+        private static global::System.Collections.Generic.IEnumerable<string> Candidates(string root, global::System.Reflection.AssemblyName name)
         {
-            var file = global::System.IO.Path.Combine(isSatellite ? global::System.IO.Path.Combine(folder, culture) : folder, fileName);
-            return global::System.IO.File.Exists(file) ? file : null;
+            var culture = name.CultureName ?? "";
+            var isSatellite = culture.Length > 0 && name.Name!.EndsWith(".resources", global::System.StringComparison.Ordinal);
+            var baseName = isSatellite ? name.Name!.Substring(0, name.Name.Length - ".resources".Length) : name.Name!;
+            var fileName = name.Name + ".dll";
+
+            foreach (var versionFolder in VersionFolders(global::System.IO.Path.Combine(root, baseName), name.Version))
+            {
+                yield return File(versionFolder, culture, fileName);
+                foreach (var tfmFolder in Subfolders(global::System.IO.Path.Combine(versionFolder, "lib")))
+                    yield return File(tfmFolder, culture, fileName);
+            }
+
+            yield return File(root, culture, fileName);
+        }
+
+        private static string File(string folder, string culture, string fileName) =>
+            global::System.IO.Path.Combine(culture.Length > 0 ? global::System.IO.Path.Combine(folder, culture) : folder, fileName);
+
+        // The file must be a managed assembly with the requested name, culture and public key token, and a version
+        // not lower than the requested one: the runtime accepts whatever a Resolving handler returns.
+        private static bool Matches(string file, global::System.Reflection.AssemblyName requested)
+        {
+            global::System.Reflection.AssemblyName found;
+            try
+            {
+                if (!global::System.IO.File.Exists(file))
+                    return false;
+                found = global::System.Reflection.AssemblyName.GetAssemblyName(file);
+            }
+            catch (global::System.Exception)
+            {
+                return false;
+            }
+
+            if (!string.Equals(found.Name, requested.Name, global::System.StringComparison.OrdinalIgnoreCase))
+                return false;
+            if (!string.Equals(found.CultureName ?? "", requested.CultureName ?? "", global::System.StringComparison.OrdinalIgnoreCase))
+                return false;
+            if (requested.Version is not null && (found.Version is null || found.Version < requested.Version))
+                return false;
+
+            var requestedToken = requested.GetPublicKeyToken();
+            if (requestedToken is { Length: > 0 } && !global::System.Linq.Enumerable.SequenceEqual(requestedToken, found.GetPublicKeyToken() ?? global::System.Array.Empty<byte>()))
+                return false;
+
+            return true;
         }
 
         // The folder of the requested version first; then the other folders of the same major version, newest first.
         // Version 0.0.0.0 matches any folder: some published reference assemblies were built without a version.
         private static global::System.Collections.Generic.IEnumerable<string> VersionFolders(string assemblyFolder, global::System.Version? requested)
         {
-            if (!global::System.IO.Directory.Exists(assemblyFolder))
-                yield break;
-
             if (requested is not null && requested.Major == 0 && requested.Minor == 0 && requested.Build <= 0)
                 requested = null;
 
@@ -79,12 +111,11 @@ namespace Digi21.DigiNG.Runtime
             if (requested is not null)
             {
                 exact = global::System.IO.Path.Combine(assemblyFolder, $"{requested.Major}.{requested.Minor}.{(global::System.Math.Max(requested.Build, 0))}");
-                if (global::System.IO.Directory.Exists(exact))
-                    yield return exact;
+                yield return exact;
             }
 
             var others = new global::System.Collections.Generic.List<(global::System.Version Version, string Folder)>();
-            foreach (var folder in global::System.IO.Directory.GetDirectories(assemblyFolder))
+            foreach (var folder in Subfolders(assemblyFolder))
             {
                 if (global::System.Version.TryParse(global::System.IO.Path.GetFileName(folder), out var version)
                     && (requested is null || version.Major == requested.Major)
@@ -95,6 +126,18 @@ namespace Digi21.DigiNG.Runtime
             others.Sort((a, b) => b.Version.CompareTo(a.Version));
             foreach (var other in others)
                 yield return other.Folder;
+        }
+
+        private static string[] Subfolders(string folder)
+        {
+            try
+            {
+                return global::System.IO.Directory.Exists(folder) ? global::System.IO.Directory.GetDirectories(folder) : global::System.Array.Empty<string>();
+            }
+            catch (global::System.Exception)
+            {
+                return global::System.Array.Empty<string>();
+            }
         }
 
         [global::System.Runtime.Versioning.SupportedOSPlatform("windows")]
