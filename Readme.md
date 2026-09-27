@@ -6,7 +6,7 @@ This repository contains the source code of the [reference assembly](https://doc
 
 It provides mathematical types, types to instantiate the different types of geometries supported by Digi3D.AI, types related to importers/exporters of drawing files, types related to code tables, databases, cameras, etc.
 
-The package also adds [`Digi3DAssemblyResolver.cs`](NuGet/contentFiles/cs/any/Digi3DAssemblyResolver.cs) to the C# projects that reference it, directly or through any other `Digi21.DigiNG.*` package. It loads the runtime assemblies from the Digi3D.AI installation folder, so the application can be installed in any folder.
+The package also adds [`Digi3DAssemblyResolver.cs`](NuGet/buildTransitive/Digi3DAssemblyResolver.cs) to the C# projects that reference it, directly or through any other package, with [`buildTransitive/Digi21.DigiNG.targets`](NuGet/buildTransitive/Digi21.DigiNG.targets). It loads the runtime assemblies from the Digi3D.AI installation folder, so the application can be installed in any folder. Set the MSBuild property `Digi21DisableAssemblyResolver` to `true` to leave it out.
 
 ## Publishing
 

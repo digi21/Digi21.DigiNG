@@ -22,13 +22,11 @@ A Digi3D.AI license is required to run applications that use the assemblies publ
 		<dependencies>
 			<group targetFramework="net10.0"/>
 		</dependencies>
-		<contentFiles>
-			<files include="cs/any/Digi3DAssemblyResolver.cs" buildAction="Compile" />
-		</contentFiles>
 	</metadata>
 	<files>
 		<file src="..\Digi21.DigiNG\obj\Release\net10.0\ref\Digi21.DigiNG.dll" target="ref\net10.0\Digi21.DigiNG.dll" />
-		<file src="contentFiles\cs\any\Digi3DAssemblyResolver.cs" target="contentFiles\cs\any\Digi3DAssemblyResolver.cs" />
+		<file src="buildTransitive\Digi21.DigiNG.targets" target="buildTransitive\Digi21.DigiNG.targets" />
+		<file src="buildTransitive\Digi3DAssemblyResolver.cs" target="buildTransitive\Digi3DAssemblyResolver.cs" />
 		<file src="IconoDigi21.png" target="IconoDigi21.png" />
 		<file src="README.md" target="README.md" />
 	</files>

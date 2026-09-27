@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Imported into every project that references Digi21.DigiNG, directly or through another package. -->
+<Project>
+  <ItemGroup Condition="'$(Language)' == 'C#' and '$(Digi21DisableAssemblyResolver)' != 'true'">
+    <Compile Include="$(MSBuildThisFileDirectory)Digi3DAssemblyResolver.cs" Link="Digi3DAssemblyResolver.cs" Visible="false" />
+  </ItemGroup>
+</Project>
