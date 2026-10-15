@@ -71,10 +71,10 @@ namespace Digi21.Math
         public static Window2D Union(Window3D a, Window2D b) => throw null;
         public static Window2D Union(Window2D a, Window3D b) => throw null;
         public static Window2D Union(Window2D a, Window2D b) => throw null;
-        public static Window2D Union(IWindow3D window, double xMin, double xMax, double yMin, double yMax) => throw null;
-        public static Window2D Union(IWindow2D window, double xMin, double xMax, double yMin, double yMax) => throw null;
-        public static Window2D Union(Window3D window, double xMin, double xMax, double yMin, double yMax) => throw null;
-        public static Window2D Union(Window2D window, double xMin, double xMax, double yMin, double yMax) => throw null;
+        public static Window2D Union(IWindow3D window, double xMin, double yMin, double xMax, double yMax) => throw null;
+        public static Window2D Union(IWindow2D window, double xMin, double yMin, double xMax, double yMax) => throw null;
+        public static Window2D Union(Window3D window, double xMin, double yMin, double xMax, double yMax) => throw null;
+        public static Window2D Union(Window2D window, double xMin, double yMin, double xMax, double yMax) => throw null;
         public void Union(IWindow3D window) => throw null;
         public void Union(IWindow2D window) => throw null;
         public void Union(Window3D window) => throw null;
