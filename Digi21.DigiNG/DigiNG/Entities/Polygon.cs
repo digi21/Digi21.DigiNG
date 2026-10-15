@@ -5,8 +5,8 @@ namespace Digi21.DigiNG.Entities
 {
     public class Polygon : ReadOnlyPolygon
     {
-        public Polygon(Code codigo) => throw null;
-        public Polygon(IEnumerable<Code> codigos) => throw null;
+        public Polygon(Code code) => throw null;
+        public Polygon(IEnumerable<Code> codes) => throw null;
         public static Polygon JoinPolygons(Entity a, Entity b) => throw null;
         public new IList<Line> Holes => throw null;
         public new Point3DCollection Points => throw null;

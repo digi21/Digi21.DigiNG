@@ -6,7 +6,7 @@ namespace Digi21.Math
         public static double AzimuthToTrigonometric(this double radians) => throw null;
         public static void DMSToSexagesimal(int degrees, int minutes, double seconds, bool east, out double sexagesimal) => throw null;
         public static double GradianToRadian(this double gradian) => throw null;
-        public static double GradianToSexagesimal(this double radian) => throw null;
+        public static double GradianToSexagesimal(this double gradian) => throw null;
         public static void MatrixToRotations(this double[,] eulerMatrix, out double omega, out double phi, out double kappa) => throw null;
         public static double NormalizeAngle(this double radians) => throw null;
         public static double RadianToGradian(this double radian) => throw null;

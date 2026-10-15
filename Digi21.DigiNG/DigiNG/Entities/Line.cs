@@ -6,7 +6,7 @@ namespace Digi21.DigiNG.Entities
     public class Line : ReadOnlyLine, IDesplazable, IDirectionable
     {
         public Line(Code code) => throw null;
-        public Line(IEnumerable<Code> codigos) => throw null;
+        public Line(IEnumerable<Code> codes) => throw null;
         public void ChangeDirection() => throw null;
         public void Close() => throw null;
         public new void Offset(Point2D offset) => throw null;
