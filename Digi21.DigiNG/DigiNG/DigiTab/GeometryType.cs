@@ -2,8 +2,8 @@
 {
     public enum GeometryType
     {
+        Virtual,
         Point,
-        Line,
-        Virtual
+        Line
     }
 }
