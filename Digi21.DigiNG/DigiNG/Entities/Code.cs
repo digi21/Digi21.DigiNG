@@ -9,7 +9,7 @@ namespace Digi21.DigiNG.Entities
         public Code(string name, int? table, int? id) => throw null;
         public Code(string name, int table, int id) => throw null;
         public Code(string name) => throw null;
-        public Code(string name, IDictionary<string, object> atributes) => throw null;
+        public Code(string name, IDictionary<string, object> attributes) => throw null;
         public string Name => throw null;
         public int? Table => throw null;
         public int? Id => throw null;
