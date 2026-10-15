@@ -2,6 +2,9 @@
 {
     public struct Segment
     {
+        private Point3D _origin;
+        private Point3D _destination;
+
         public Segment(Point3D origin, Point3D destination) => throw null;
         public Point3D Origin { get => throw null; set => throw null; }
         public Point3D Destination { get => throw null; set => throw null; }

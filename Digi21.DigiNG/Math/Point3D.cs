@@ -3,6 +3,10 @@ namespace Digi21.Math
 {
     public struct Point3D : IDesplazable
     {
+        private double _x;
+        private double _y;
+        private double _z;
+
         public double X { get => throw null; set => throw null; }
         public double Y { get => throw null; set => throw null; }
         public double Z { get => throw null; set => throw null; }

@@ -4,6 +4,13 @@ namespace Digi21.Math
 {
     public struct Window3D : IWindow3D, IDesplazable
     {
+        private double? _xmin;
+        private double _ymin;
+        private double _zmin;
+        private double _xmax;
+        private double _ymax;
+        private double _zmax;
+
         public double? Xmin => throw null;
         public double Ymin => throw null;
         public double Zmin => throw null;

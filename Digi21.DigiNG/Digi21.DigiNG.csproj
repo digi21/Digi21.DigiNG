@@ -4,6 +4,8 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Digi21</RootNamespace>
     <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <!-- Private struct fields only reproduce the layout of the real DLL; nothing reads them. -->
+    <NoWarn>$(NoWarn);CS0169</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>

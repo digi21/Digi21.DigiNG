@@ -4,6 +4,11 @@ namespace Digi21.Math
 {
     public struct Window2D : IWindow2D, IDesplazable
     {
+        private double? _xmin;
+        private double _ymin;
+        private double _xmax;
+        private double _ymax;
+
         public static readonly Window2D WholeWorld;
         public double? Xmin => throw null;
         public double Ymin => throw null;

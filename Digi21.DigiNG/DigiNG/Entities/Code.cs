@@ -6,6 +6,14 @@ namespace Digi21.DigiNG.Entities
 {
     public struct Code
     {
+        private string _nombre;
+        private int? _tabla;
+        private int? _id;
+        private ulong _indiceDigiTab;
+        private uint _visible;
+        private uint _visibleVentanaFotogrametrica;
+        private IDictionary<string, object> _attributes;
+
         public Code(string name, int? table, int? id) => throw null;
         public Code(string name, int table, int id) => throw null;
         public Code(string name) => throw null;
