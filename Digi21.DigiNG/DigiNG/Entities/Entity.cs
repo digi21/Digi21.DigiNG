@@ -30,12 +30,12 @@ namespace Digi21.DigiNG.Entities
         public double Height => throw null;
         public double Width => throw null;
         public bool Valid => throw null;
-        public double Zmax => throw null;
-        public double Ymax => throw null;
-        public double Xmax => throw null;
-        public double Zmin => throw null;
-        public double Ymin => throw null;
-        public double? Xmin => throw null;
+        public double Zmax { get => throw null; set => throw null; }
+        public double Ymax { get => throw null; set => throw null; }
+        public double Xmax { get => throw null; set => throw null; }
+        public double Zmin { get => throw null; set => throw null; }
+        public double Ymin { get => throw null; set => throw null; }
+        public double? Xmin { get => throw null; set => throw null; }
         #endregion
         public IDrawingFile Owner => throw null;
         public IDictionary<string, object> Attributes { get => throw null; set => throw null; }
