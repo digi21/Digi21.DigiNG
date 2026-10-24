@@ -26,7 +26,7 @@ A Digi3D.AI license is required to run applications that use the assemblies publ
     <FileVersion>26.0.0.0</FileVersion>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Title>Digi21.DigiNG</Title>
-    <version>26.0.1</version>
+    <version>26.1.0</version>
     <Authors>José Ángel Martínez Torres</Authors>
     <PackageProjectUrl>https://digi3d.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/digi21/Digi21.DigiNG.git</RepositoryUrl>
