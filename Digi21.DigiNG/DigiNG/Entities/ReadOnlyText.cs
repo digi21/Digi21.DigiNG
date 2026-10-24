@@ -13,6 +13,7 @@ namespace Digi21.DigiNG.Entities
         public TextJustification Justification => throw null;
         public double TextHeight => throw null;
         public double Rotation => throw null;
+        public Quaternion Orientation => throw null;
         public string Txt => throw null;
         public Point3D Coordinate => throw null;
     }
