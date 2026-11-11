@@ -15,7 +15,7 @@
         HighestZ = 3,
         /// <summary>The lower Z coordinate of the two segments.</summary>
         LowestZ = 4,
-        /// <summary>The Z coordinate of the centroid. If the polygon has no centroid, the node receives the Z coordinate of the segment to which this rule applies.</summary>
+        /// <summary>The Z coordinate of the polygon centroid. If the polygon has no centroid, the node receives the Z coordinate of the segment to which this rule applies.</summary>
         CentroidZ = 5,
         /// <summary>
         /// Assigns the Z coordinate of the polygon centroid, or the Z coordinate of the segment to which this rule applies if the polygon has no centroid.
